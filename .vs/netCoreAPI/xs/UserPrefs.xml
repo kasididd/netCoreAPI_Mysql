@@ -4,7 +4,7 @@
   <MonoDevelop.Ide.Workbench ActiveDocument="netCoreAPI/Controllers/StudentController.cs">
     <Files>
       <File FileName="netCoreAPI/Models/Student.cs" />
-      <File FileName="netCoreAPI/Controllers/StudentController.cs" Line="107" Column="21" />
+      <File FileName="netCoreAPI/Controllers/StudentController.cs" Line="8" Column="15" />
       <File FileName="netCoreAPI/Program.cs" />
       <File FileName="netCoreAPI/appsettings.json" />
       <File FileName="netCoreAPI/Properties/launchSettings.json" />
@@ -14,8 +14,9 @@
         <State name="__root__">
           <Node name="netCoreAPI" expanded="True">
             <Node name="netCoreAPI" expanded="True">
-              <Node name="Dependencies" selected="True" />
-              <Node name="Controllers" expanded="True" />
+              <Node name="Controllers" expanded="True">
+                <Node name="StudentController.cs" selected="True" />
+              </Node>
               <Node name="Models" expanded="True" />
               <Node name="Properties" expanded="True" />
             </Node>

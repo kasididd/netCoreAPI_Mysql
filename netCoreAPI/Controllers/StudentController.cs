@@ -12,7 +12,8 @@ using netCoreAPI.Models;
 
 namespace netCoreAPI.Controllers;
 
-[Route("api/[controller]")]
+[Route("api")]
+//[Route("api/[controller]")]
 public class StudentController : Controller
 {
     static Student s1 = new Student { name = "sd", id = 1, grade = 3.3 };
@@ -62,23 +63,18 @@ public class StudentController : Controller
 
     // POST api/values
     [HttpPost]
-    public List<Student> Post([FromBody]Student value)
+    public String Post([FromBody]Student value)
     {
         conn.Open();
-        List<Student> result = new();
         string query = $"insert into   students (`id`, `name`, `grade`) values ({value.id}, '{value.name}', {value.grade})";
         MySqlDataReader cmd = new MySqlCommand(query, conn).ExecuteReader();
-        while (cmd.Read())
-        {
-            result.Add(new Student { id = int.Parse(cmd["id"].ToString() ?? "0"), name = cmd["name"].ToString(), grade = double.Parse(cmd["grade"].ToString() ?? "0") });
-            //Student val = new() { name="kasidid"};
-        }
-        return result;
+        
+        return "insert  success";
     }
 
     // PUT api/values/5
     [HttpPut("{id}")]
-    public List<Student> Put(int id, [FromBody]Student value)
+    public String Put(int id, [FromBody]Student value)
     {
         conn.Open();
         List<Student> result = new();
@@ -89,12 +85,12 @@ public class StudentController : Controller
             result.Add(new Student { id = int.Parse(cmd["id"].ToString() ?? "0"), name = cmd["name"].ToString(), grade = double.Parse(cmd["grade"].ToString() ?? "0") });
             //Student val = new() { name="kasidid"};
         }
-        return result;
+        return $"update success at id = {id}";
     }
     
     // DELETE api/values/5
     [HttpDelete("{id}")]
-    public List<Student> Delete(int id)
+    public String Delete(int id)
     {
         conn.Open();
         List<Student> result = new();
@@ -105,7 +101,7 @@ public class StudentController : Controller
             result.Add(new Student { id = int.Parse(cmd["id"].ToString() ?? "0"), name = cmd["name"].ToString(), grade = double.Parse(cmd["grade"].ToString() ?? "0") });
             //Student val = new() { name="kasidid"};
         }
-        return result;
+        return $"delete at id = {id} sucess";
     }
 }
 
