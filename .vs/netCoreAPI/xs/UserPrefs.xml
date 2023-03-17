@@ -3,18 +3,19 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.Workbench ActiveDocument="netCoreAPI/Controllers/StudentController.cs">
     <Files>
-      <File FileName="netCoreAPI/Models/Student.cs" Line="10" Column="2" />
-      <File FileName="netCoreAPI/Controllers/StudentController.cs" Line="31" Column="1" />
-      <File FileName="netCoreAPI/Program.cs" Line="1" Column="1" />
-      <File FileName="netCoreAPI/appsettings.json" Line="1" Column="1" />
-      <File FileName="netCoreAPI/Properties/launchSettings.json" Line="12" Column="14" />
+      <File FileName="netCoreAPI/Models/Student.cs" />
+      <File FileName="netCoreAPI/Controllers/StudentController.cs" Line="107" Column="21" />
+      <File FileName="netCoreAPI/Program.cs" />
+      <File FileName="netCoreAPI/appsettings.json" />
+      <File FileName="netCoreAPI/Properties/launchSettings.json" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="netCoreAPI" expanded="True">
             <Node name="netCoreAPI" expanded="True">
-              <Node name="Controllers" expanded="True" selected="True" />
+              <Node name="Dependencies" selected="True" />
+              <Node name="Controllers" expanded="True" />
               <Node name="Models" expanded="True" />
               <Node name="Properties" expanded="True" />
             </Node>
@@ -28,5 +29,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.ItemProperties.netCoreAPI PreferredExecutionTarget="/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
 </Properties>

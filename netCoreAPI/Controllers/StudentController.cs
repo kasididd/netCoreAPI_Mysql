@@ -36,8 +36,6 @@ public class StudentController : Controller
         MySqlDataReader cmd = new MySqlCommand(query, conn).ExecuteReader();
         while (cmd.Read())
         {
-            Console.WriteLine(cmd["id"]);
-            Console.WriteLine(cmd["name"]);
             result.Add(new Student { id = int.Parse(cmd["id"].ToString()??"0"), name = cmd["name"].ToString() ,grade = double.Parse(cmd["grade"].ToString()??"0") });
             //Student val = new() { name="kasidid"};
         }
@@ -55,8 +53,6 @@ public class StudentController : Controller
         MySqlDataReader cmd = new MySqlCommand(query, conn).ExecuteReader();
         while (cmd.Read())
         {
-            Console.WriteLine(cmd["id"]);
-            Console.WriteLine(cmd["name"]);
             result.Add(new Student { id = int.Parse(cmd["id"].ToString() ?? "0"), name = cmd["name"].ToString(), grade = double.Parse(cmd["grade"].ToString() ?? "0") });
             //Student val = new() { name="kasidid"};
         }
@@ -74,8 +70,6 @@ public class StudentController : Controller
         MySqlDataReader cmd = new MySqlCommand(query, conn).ExecuteReader();
         while (cmd.Read())
         {
-            Console.WriteLine(cmd["id"]);
-            Console.WriteLine(cmd["name"]);
             result.Add(new Student { id = int.Parse(cmd["id"].ToString() ?? "0"), name = cmd["name"].ToString(), grade = double.Parse(cmd["grade"].ToString() ?? "0") });
             //Student val = new() { name="kasidid"};
         }
@@ -92,8 +86,6 @@ public class StudentController : Controller
         MySqlDataReader cmd = new MySqlCommand(query, conn).ExecuteReader();
         while (cmd.Read())
         {
-            Console.WriteLine(cmd["id"]);
-            Console.WriteLine(cmd["name"]);
             result.Add(new Student { id = int.Parse(cmd["id"].ToString() ?? "0"), name = cmd["name"].ToString(), grade = double.Parse(cmd["grade"].ToString() ?? "0") });
             //Student val = new() { name="kasidid"};
         }
@@ -110,8 +102,6 @@ public class StudentController : Controller
         MySqlDataReader cmd = new MySqlCommand(query, conn).ExecuteReader();
         while (cmd.Read())
         {
-            Console.WriteLine(cmd["id"]);
-            Console.WriteLine(cmd["name"]);
             result.Add(new Student { id = int.Parse(cmd["id"].ToString() ?? "0"), name = cmd["name"].ToString(), grade = double.Parse(cmd["grade"].ToString() ?? "0") });
             //Student val = new() { name="kasidid"};
         }
