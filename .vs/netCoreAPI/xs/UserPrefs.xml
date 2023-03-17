@@ -1,0 +1,32 @@
+﻿<Properties StartupConfiguration="{7925C097-3AE7-4E9D-9775-9DFBA67579CB}|https">
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="netCoreAPI/Controllers/StudentController.cs">
+    <Files>
+      <File FileName="netCoreAPI/Models/Student.cs" Line="10" Column="2" />
+      <File FileName="netCoreAPI/Controllers/StudentController.cs" Line="31" Column="1" />
+      <File FileName="netCoreAPI/Program.cs" Line="1" Column="1" />
+      <File FileName="netCoreAPI/appsettings.json" Line="1" Column="1" />
+      <File FileName="netCoreAPI/Properties/launchSettings.json" Line="12" Column="14" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="netCoreAPI" expanded="True">
+            <Node name="netCoreAPI" expanded="True">
+              <Node name="Controllers" expanded="True" selected="True" />
+              <Node name="Models" expanded="True" />
+              <Node name="Properties" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.netCoreAPI PreferredExecutionTarget="/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints />
+</Properties>
